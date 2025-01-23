@@ -1,20 +1,6 @@
 {
   "name": "reanimatedcssexamples",
-  "main": "expo-router/entry",
   "version": "1.0.0",
-  "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
-    "format": "prettier --write . --ignore-unknown",
-    "test": "jest --watchAll",
-    "lint": "eslint ."
-  },
-  "jest": {
-    "preset": "jest-expo"
-  },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
@@ -44,17 +30,20 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/jest": "^29.5.12",
-    "eslint-config-react-native-matipl01": "2.1.0",
     "@types/react": "~18.3.12",
     "@types/react-test-renderer": "^18.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-react-native-matipl01": "2.1.0",
     "jest": "^29.2.1",
     "jest-expo": "~52.0.3",
-    "react-test-renderer": "18.3.1",
-    "typescript": "^5.3.3",
     "lint-staged": "^15.2.7",
-    "eslint": "^8.56.0",
     "prettier": "^3.3.2",
-    "syncpack": "^12.3.3"
+    "react-test-renderer": "18.3.1",
+    "syncpack": "^12.3.3",
+    "typescript": "^5.3.3"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -65,5 +54,16 @@
       "syncpack format"
     ]
   },
-  "private": true
+  "main": "expo-router/entry",
+  "private": true,
+  "scripts": {
+    "android": "expo run:android",
+    "format": "prettier --write . --ignore-unknown",
+    "ios": "expo run:ios",
+    "lint": "eslint .",
+    "prepare": "husky",
+    "reset-project": "node ./scripts/reset-project.js",
+    "start": "expo start",
+    "web": "expo start --web"
+  }
 }

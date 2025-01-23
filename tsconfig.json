@@ -6,11 +6,15 @@
       "@/*": ["./*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
+  "exclude": [
+    "node_modules",
+    // Expo must update types colliding with Reanimated CSS Animations
+    // (for now, we exclude expo-env.d.ts)
     "expo-env.d.ts",
-    ".eslintrc.cjs"
+    "ios",
+    "android",
+    ".expo",
+    "dist",
+    "web-build"
   ]
 }
