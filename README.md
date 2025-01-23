@@ -1,50 +1,35 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Reanimated CSS Examples
 
-## Get started
+## Run the project
 
-1. Install dependencies
+### Clone the repo and install dependencies 
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```sh
+git clone https://github.com/MatiPl01/reanimated-css-examples.git
+cd reanimated-css-examples
+yarn
+npx expo prebuild
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Run the app
 
-## Learn more
+- iOS
+   ```sh
+   yarn ios
+   ```
+- Android
+  ```sh
+  yarn android
+  ```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Included examples
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 1. Potion animation
 
-## Join the community
+https://github.com/user-attachments/assets/89e6c98a-1e34-47fa-b1c1-877fb6d58a72
 
-Join our community of developers creating universal apps.
+### 2. Day Night Switch
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+https://github.com/user-attachments/assets/a8b25735-110f-4b19-b6ac-26a7385f0ab7
+
